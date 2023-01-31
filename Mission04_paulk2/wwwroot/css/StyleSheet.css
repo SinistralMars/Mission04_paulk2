@@ -1,0 +1,17 @@
+﻿body {
+    text-align: center
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+h4 {
+    display : inline;
+}
+
+/*Fixes problem with numbers in list not going to the center*/
+ol {
+    list-style-position: inside;
+}
