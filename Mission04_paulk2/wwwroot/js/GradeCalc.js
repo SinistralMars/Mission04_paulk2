@@ -1,7 +1,8 @@
 ﻿$('#btnSubmit').click(function () {
 
-    /*Get percentage from form*/
-    var percent = $('#numPercent').val()
+    /*Get percentage from form adjust weights and then store to a total percent*/
+    var percent = (($("#assignments").val() * .5) + ($("#quizzes").val() * .1) + ($("#groupProjects").val() * .1) + ($("#intex").val() * .1)
+        + ($("#midterm").val() * .1) + ($("#final").val() * .1));
     var letter
 
     // If else tree checking and assigning correct value for the grade to return to page
