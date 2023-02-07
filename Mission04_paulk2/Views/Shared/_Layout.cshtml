@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!-- Link to favicon image not actually in img file -->
+    <link rel="icon" href="https://img.icons8.com/fluency-systems-regular/48/null/star-wars-millenium-falcon.png">
+
+    <!-- css -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <a asp-controller="Default" asp-action="Index">Home</a>
+        <a asp-controller="Default" asp-action="Calculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- Javascript -->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.js"></script>
+    <script src="~/js/GradeCalc.js"></script>
+</body>
+</html>
